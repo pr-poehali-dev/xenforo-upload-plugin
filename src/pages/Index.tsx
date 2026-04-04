@@ -1,9 +1,10 @@
 const ColorPalette = () => {
   const colors = [
-    { name: "Красный", hex: "#E63946", bg: "bg-[#E63946]" },
-    { name: "Зелёный", hex: "#2D6A4F", bg: "bg-[#2D6A4F]" },
-    { name: "Синий", hex: "#1D3D8F", bg: "bg-[#1D3D8F]" },
-    { name: "Белый", hex: "#FFFFFF", bg: "bg-white border border-gray-200" },
+    { name: "Красный", hex: "#E63946" },
+    { name: "Зелёный", hex: "#2D6A4F" },
+    { name: "Синий", hex: "#1D3D8F" },
+    { name: "Розовый", hex: "#F472B6" },
+    { name: "Белый", hex: "#FFFFFF" },
   ];
 
   return (
@@ -13,8 +14,8 @@ const ColorPalette = () => {
         <div className="relative w-full" style={{ aspectRatio: "440/430" }}>
           {/* Generated image with colored dresses */}
           <img
-            src="https://cdn.poehali.dev/projects/e2914489-88ab-4a41-8ae3-adfd1e6c1bed/files/1be5fa2a-0206-431c-8e11-c5686a6054c0.jpg"
-            alt="Bridesmaids in red, green, blue and white dresses"
+            src="https://cdn.poehali.dev/projects/e2914489-88ab-4a41-8ae3-adfd1e6c1bed/files/ccea5af4-6144-4ec7-9785-ad3e271371f2.jpg"
+            alt="Bridesmaids in red, green, blue, pink and white dresses"
             className="w-full h-full object-cover"
           />
 
@@ -51,7 +52,7 @@ const ColorPalette = () => {
             <div
               key={color.hex}
               className="flex-1 relative group cursor-pointer transition-all duration-200 hover:flex-[1.3]"
-              style={{ backgroundColor: color.hex, border: color.hex === "#FFFFFF" ? "none" : "none" }}
+              style={{ backgroundColor: color.hex }}
             >
               {/* Hover tooltip */}
               <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
@@ -75,7 +76,7 @@ const ColorPalette = () => {
                 className="w-5 h-5 rounded-sm shadow-inner"
                 style={{
                   backgroundColor: color.hex,
-                  border: color.hex === "#FFFFFF" ? "1px solid rgba(255,255,255,0.2)" : "none",
+                  border: color.hex === "#FFFFFF" ? "1px solid rgba(255,255,255,0.15)" : "none",
                 }}
               />
             ))}
