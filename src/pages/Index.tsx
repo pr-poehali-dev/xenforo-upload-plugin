@@ -14,8 +14,8 @@ const ColorPalette = () => {
         <div className="relative w-full">
           {/* Generated image with colored dresses */}
           <img
-            src="https://cdn.poehali.dev/projects/e2914489-88ab-4a41-8ae3-adfd1e6c1bed/files/ccea5af4-6144-4ec7-9785-ad3e271371f2.jpg"
-            alt="Bridesmaids in red, green, blue, pink and white dresses"
+            src="https://cdn.poehali.dev/projects/e2914489-88ab-4a41-8ae3-adfd1e6c1bed/files/a1cc1fe4-888a-4184-b892-2ec23dd1606d.jpg"
+            alt="Bride with 5 bridesmaids in red, green, blue, white and pink dresses"
             className="w-full object-cover object-[center_35%]"
             style={{ height: "360px" }}
           />
