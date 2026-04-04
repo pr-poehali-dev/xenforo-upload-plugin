@@ -16,7 +16,8 @@ const ColorPalette = () => {
           <img
             src="https://cdn.poehali.dev/projects/e2914489-88ab-4a41-8ae3-adfd1e6c1bed/files/ccea5af4-6144-4ec7-9785-ad3e271371f2.jpg"
             alt="Bridesmaids in red, green, blue, pink and white dresses"
-            className="w-full h-auto block"
+            className="w-full object-cover object-[center_35%]"
+            style={{ height: "360px" }}
           />
 
           {/* Toolbar overlay at bottom-left of image */}
