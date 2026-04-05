@@ -1,87 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="60" viewBox="0 0 800 60">
-  <!-- Transparent background -->
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="70" viewBox="0 0 800 70">
+  <!-- Left double lines with gradient -->
+  <defs>
+    <linearGradient id="lineLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9956c;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#c9956c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c9956c;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="lineRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c9956c;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#c9956c;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#c9956c;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="lineLeftThin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8b98a;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#e8b98a;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#e8b98a;stop-opacity:0.6"/>
+    </linearGradient>
+    <linearGradient id="lineRightThin" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8b98a;stop-opacity:0.6"/>
+      <stop offset="70%" style="stop-color:#e8b98a;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#e8b98a;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Left lines (from edge to emblem) -->
-  <line x1="0" y1="27" x2="375" y2="27" stroke="#c9956c" stroke-width="2"/>
-  <line x1="0" y1="33" x2="375" y2="33" stroke="#c9956c" stroke-width="2"/>
+  <!-- Left thick line -->
+  <line x1="0" y1="32" x2="368" y2="32" stroke="url(#lineLeft)" stroke-width="2.5"/>
+  <!-- Left thin line -->
+  <line x1="0" y1="37" x2="368" y2="37" stroke="url(#lineLeftThin)" stroke-width="1"/>
 
-  <!-- Right lines (from emblem to edge) -->
-  <line x1="425" y1="27" x2="800" y2="27" stroke="#c9956c" stroke-width="2"/>
-  <line x1="425" y1="33" x2="800" y2="33" stroke="#c9956c" stroke-width="2"/>
+  <!-- Right thick line -->
+  <line x1="432" y1="32" x2="800" y2="32" stroke="url(#lineRight)" stroke-width="2.5"/>
+  <!-- Right thin line -->
+  <line x1="432" y1="37" x2="800" y2="37" stroke="url(#lineRightThin)" stroke-width="1"/>
 
-  <!-- Russian double-headed eagle emblem (outline), centered at 400,30, ~40x50px -->
-  <g transform="translate(400,30)" fill="none" stroke="#c9956c" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+  <!-- Герб РФ двуглавый орёл -->
+  <g transform="translate(400,34) scale(1.15)" fill="none" stroke="#c9956c" stroke-linejoin="round" stroke-linecap="round">
 
-    <!-- Body of the eagle -->
-    <ellipse cx="0" cy="6" rx="10" ry="12"/>
+    <!-- Тело орла -->
+    <ellipse cx="0" cy="8" rx="11" ry="13" stroke-width="1.3" fill="#c9956c" fill-opacity="0.12"/>
 
-    <!-- Shield on chest -->
-    <path d="M-5,2 L-5,12 Q0,17 5,12 L5,2 Q0,0 -5,2 Z"/>
-    <!-- Rider on shield (St. George) simplified -->
-    <line x1="0" y1="5" x2="0" y2="11"/>
-    <line x1="-3" y1="8" x2="3" y2="8"/>
+    <!-- Щит на груди -->
+    <path d="M-6,3 L-6,14 Q0,20 6,14 L6,3 Q0,-1 -6,3 Z" stroke-width="1.2" fill="#c9956c" fill-opacity="0.2"/>
+    <!-- Всадник (Георгий Победоносец) -->
+    <ellipse cx="0" cy="7" rx="2.5" ry="3" stroke-width="0.8"/>
+    <line x1="0" y1="10" x2="0" y2="14" stroke-width="1"/>
+    <line x1="-3" y1="11" x2="3" y2="11" stroke-width="0.8"/>
 
-    <!-- Left head neck -->
-    <path d="M-6,-4 C-10,-8 -14,-6 -13,-2 C-12,1 -8,1 -6,-4 Z"/>
-    <!-- Left head -->
-    <circle cx="-13" cy="-8" r="5"/>
-    <!-- Left beak -->
-    <path d="M-17,-6 L-20,-7 L-17,-9"/>
-    <!-- Left crown -->
-    <path d="M-16,-13 L-14,-16 L-13,-13 L-12,-16 L-10,-13 L-13,-12 Z"/>
-    <!-- Left eye -->
-    <circle cx="-14" cy="-8" r="1"/>
+    <!-- Левая шея -->
+    <path d="M-5,-5 C-9,-10 -15,-9 -14,-4 C-13,0 -8,0 -5,-5 Z" stroke-width="1.2" fill="#c9956c" fill-opacity="0.12"/>
+    <!-- Левая голова -->
+    <circle cx="-15" cy="-10" r="6" stroke-width="1.3" fill="#c9956c" fill-opacity="0.12"/>
+    <!-- Левый клюв -->
+    <path d="M-20,-8 L-24,-10 L-20,-12" stroke-width="1.2"/>
+    <!-- Левая корона -->
+    <path d="M-19,-16 L-17,-21 L-15,-17 L-13,-21 L-11,-16" stroke-width="1.3"/>
+    <path d="M-20,-16 Q-15,-14 -10,-16" stroke-width="1"/>
+    <!-- Левый глаз -->
+    <circle cx="-16" cy="-11" r="1.2" fill="#c9956c" stroke-width="0.5"/>
 
-    <!-- Right head neck -->
-    <path d="M6,-4 C10,-8 14,-6 13,-2 C12,1 8,1 6,-4 Z"/>
-    <!-- Right head -->
-    <circle cx="13" cy="-8" r="5"/>
-    <!-- Right beak -->
-    <path d="M17,-6 L20,-7 L17,-9"/>
-    <!-- Right crown -->
-    <path d="M10,-13 L12,-16 L13,-13 L14,-16 L16,-13 L13,-12 Z"/>
-    <!-- Right eye -->
-    <circle cx="14" cy="-8" r="1"/>
+    <!-- Правая шея -->
+    <path d="M5,-5 C9,-10 15,-9 14,-4 C13,0 8,0 5,-5 Z" stroke-width="1.2" fill="#c9956c" fill-opacity="0.12"/>
+    <!-- Правая голова -->
+    <circle cx="15" cy="-10" r="6" stroke-width="1.3" fill="#c9956c" fill-opacity="0.12"/>
+    <!-- Правый клюв -->
+    <path d="M20,-8 L24,-10 L20,-12" stroke-width="1.2"/>
+    <!-- Правая корона -->
+    <path d="M11,-16 L13,-21 L15,-17 L17,-21 L19,-16" stroke-width="1.3"/>
+    <path d="M10,-16 Q15,-14 20,-16" stroke-width="1"/>
+    <!-- Правый глаз -->
+    <circle cx="16" cy="-11" r="1.2" fill="#c9956c" stroke-width="0.5"/>
 
-    <!-- Center crown above both heads -->
-    <path d="M-4,-12 L-2,-17 L0,-14 L2,-17 L4,-12"/>
-    <path d="M-5,-12 Q0,-10 5,-12"/>
+    <!-- Центральная большая корона -->
+    <path d="M-5,-14 L-3,-20 L0,-16 L3,-20 L5,-14" stroke-width="1.5"/>
+    <path d="M-6,-14 Q0,-11 6,-14" stroke-width="1.2"/>
+    <circle cx="0" cy="-20" r="1.5" fill="#c9956c" stroke-width="0.5"/>
 
-    <!-- Left wing -->
-    <path d="M-10,0 C-18,-4 -24,0 -22,8 C-20,14 -14,14 -10,8"/>
-    <path d="M-10,2 C-16,0 -20,4 -19,9"/>
-    <path d="M-10,4 C-15,3 -18,7 -17,11"/>
-    <!-- Wing feathers left -->
-    <path d="M-22,4 L-26,2 M-23,7 L-27,7 M-22,10 L-26,12"/>
+    <!-- Левое крыло -->
+    <path d="M-10,-1 C-20,-6 -28,-2 -26,8 C-24,16 -16,17 -10,10" stroke-width="1.4" fill="#c9956c" fill-opacity="0.08"/>
+    <path d="M-11,2 C-19,-1 -24,4 -23,11" stroke-width="1"/>
+    <path d="M-11,5 C-18,3 -22,8 -21,13" stroke-width="1"/>
+    <!-- Перья левого крыла -->
+    <path d="M-26,3 L-31,0" stroke-width="1.2"/>
+    <path d="M-27,7 L-32,7" stroke-width="1.2"/>
+    <path d="M-26,11 L-31,14" stroke-width="1.2"/>
+    <path d="M-23,14 L-27,18" stroke-width="1.2"/>
 
-    <!-- Right wing -->
-    <path d="M10,0 C18,-4 24,0 22,8 C20,14 14,14 10,8"/>
-    <path d="M10,2 C16,0 20,4 19,9"/>
-    <path d="M10,4 C15,3 18,7 17,11"/>
-    <!-- Wing feathers right -->
-    <path d="M22,4 L26,2 M23,7 L27,7 M22,10 L26,12"/>
+    <!-- Правое крыло -->
+    <path d="M10,-1 C20,-6 28,-2 26,8 C24,16 16,17 10,10" stroke-width="1.4" fill="#c9956c" fill-opacity="0.08"/>
+    <path d="M11,2 C19,-1 24,4 23,11" stroke-width="1"/>
+    <path d="M11,5 C18,3 22,8 21,13" stroke-width="1"/>
+    <!-- Перья правого крыла -->
+    <path d="M26,3 L31,0" stroke-width="1.2"/>
+    <path d="M27,7 L32,7" stroke-width="1.2"/>
+    <path d="M26,11 L31,14" stroke-width="1.2"/>
+    <path d="M23,14 L27,18" stroke-width="1.2"/>
 
-    <!-- Tail feathers -->
-    <path d="M-6,16 L-8,24 M-3,17 L-4,25 M0,18 L0,26 M3,17 L4,25 M6,16 L8,24"/>
-    <path d="M-6,16 Q0,14 6,16"/>
+    <!-- Хвост -->
+    <path d="M-7,19 Q0,17 7,19" stroke-width="1.2"/>
+    <path d="M-8,19 L-10,28" stroke-width="1.2"/>
+    <path d="M-4,20 L-5,29" stroke-width="1.2"/>
+    <path d="M0,21 L0,30" stroke-width="1.2"/>
+    <path d="M4,20 L5,29" stroke-width="1.2"/>
+    <path d="M8,19 L10,28" stroke-width="1.2"/>
 
-    <!-- Left talon -->
-    <path d="M-5,16 C-8,20 -10,22 -9,25"/>
-    <path d="M-9,25 L-12,27 M-9,25 L-9,28 M-9,25 L-6,27"/>
+    <!-- Левая лапа -->
+    <path d="M-5,19 C-8,23 -10,26 -9,29" stroke-width="1.2"/>
+    <path d="M-9,29 L-13,32 M-9,29 L-9,33 M-9,29 L-5,32" stroke-width="1"/>
 
-    <!-- Right talon -->
-    <path d="M5,16 C8,20 10,22 9,25"/>
-    <path d="M9,25 L12,27 M9,25 L9,28 M9,25 L6,27"/>
+    <!-- Правая лапа -->
+    <path d="M5,19 C8,23 10,26 9,29" stroke-width="1.2"/>
+    <path d="M9,29 L13,32 M9,29 L9,33 M9,29 L5,32" stroke-width="1"/>
 
-    <!-- Scepter (left claw) -->
-    <line x1="-12" y1="22" x2="-12" y2="14"/>
-    <path d="M-14,14 L-12,11 L-10,14"/>
-    <circle cx="-12" cy="13" r="1.5"/>
+    <!-- Скипетр (левая лапа) -->
+    <line x1="-13" y1="26" x2="-13" y2="16" stroke-width="1.3"/>
+    <path d="M-15.5,16 L-13,12 L-10.5,16" stroke-width="1.2"/>
+    <circle cx="-13" cy="14" r="2" stroke-width="1"/>
 
-    <!-- Orb (right claw) -->
-    <circle cx="12" cy="20" r="3.5"/>
-    <line x1="12" y1="16.5" x2="12" y2="14"/>
-    <path d="M9,20 Q12,18 15,20"/>
+    <!-- Держава (правая лапа) -->
+    <circle cx="13" cy="23" r="4.5" stroke-width="1.3" fill="#c9956c" fill-opacity="0.1"/>
+    <line x1="13" y1="18.5" x2="13" y2="16" stroke-width="1.2"/>
+    <path d="M9,23 Q13,20.5 17,23" stroke-width="1"/>
+    <line x1="13" y1="18.5" x2="13" y2="27.5" stroke-width="0.8"/>
 
   </g>
 </svg>
