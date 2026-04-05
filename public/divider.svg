@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="60" viewBox="0 0 800 60">
+  <!-- Transparent background -->
+
+  <!-- Left lines (from edge to emblem) -->
+  <line x1="0" y1="27" x2="375" y2="27" stroke="#c9956c" stroke-width="2"/>
+  <line x1="0" y1="33" x2="375" y2="33" stroke="#c9956c" stroke-width="2"/>
+
+  <!-- Right lines (from emblem to edge) -->
+  <line x1="425" y1="27" x2="800" y2="27" stroke="#c9956c" stroke-width="2"/>
+  <line x1="425" y1="33" x2="800" y2="33" stroke="#c9956c" stroke-width="2"/>
+
+  <!-- Russian double-headed eagle emblem (outline), centered at 400,30, ~40x50px -->
+  <g transform="translate(400,30)" fill="none" stroke="#c9956c" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Body of the eagle -->
+    <ellipse cx="0" cy="6" rx="10" ry="12"/>
+
+    <!-- Shield on chest -->
+    <path d="M-5,2 L-5,12 Q0,17 5,12 L5,2 Q0,0 -5,2 Z"/>
+    <!-- Rider on shield (St. George) simplified -->
+    <line x1="0" y1="5" x2="0" y2="11"/>
+    <line x1="-3" y1="8" x2="3" y2="8"/>
+
+    <!-- Left head neck -->
+    <path d="M-6,-4 C-10,-8 -14,-6 -13,-2 C-12,1 -8,1 -6,-4 Z"/>
+    <!-- Left head -->
+    <circle cx="-13" cy="-8" r="5"/>
+    <!-- Left beak -->
+    <path d="M-17,-6 L-20,-7 L-17,-9"/>
+    <!-- Left crown -->
+    <path d="M-16,-13 L-14,-16 L-13,-13 L-12,-16 L-10,-13 L-13,-12 Z"/>
+    <!-- Left eye -->
+    <circle cx="-14" cy="-8" r="1"/>
+
+    <!-- Right head neck -->
+    <path d="M6,-4 C10,-8 14,-6 13,-2 C12,1 8,1 6,-4 Z"/>
+    <!-- Right head -->
+    <circle cx="13" cy="-8" r="5"/>
+    <!-- Right beak -->
+    <path d="M17,-6 L20,-7 L17,-9"/>
+    <!-- Right crown -->
+    <path d="M10,-13 L12,-16 L13,-13 L14,-16 L16,-13 L13,-12 Z"/>
+    <!-- Right eye -->
+    <circle cx="14" cy="-8" r="1"/>
+
+    <!-- Center crown above both heads -->
+    <path d="M-4,-12 L-2,-17 L0,-14 L2,-17 L4,-12"/>
+    <path d="M-5,-12 Q0,-10 5,-12"/>
+
+    <!-- Left wing -->
+    <path d="M-10,0 C-18,-4 -24,0 -22,8 C-20,14 -14,14 -10,8"/>
+    <path d="M-10,2 C-16,0 -20,4 -19,9"/>
+    <path d="M-10,4 C-15,3 -18,7 -17,11"/>
+    <!-- Wing feathers left -->
+    <path d="M-22,4 L-26,2 M-23,7 L-27,7 M-22,10 L-26,12"/>
+
+    <!-- Right wing -->
+    <path d="M10,0 C18,-4 24,0 22,8 C20,14 14,14 10,8"/>
+    <path d="M10,2 C16,0 20,4 19,9"/>
+    <path d="M10,4 C15,3 18,7 17,11"/>
+    <!-- Wing feathers right -->
+    <path d="M22,4 L26,2 M23,7 L27,7 M22,10 L26,12"/>
+
+    <!-- Tail feathers -->
+    <path d="M-6,16 L-8,24 M-3,17 L-4,25 M0,18 L0,26 M3,17 L4,25 M6,16 L8,24"/>
+    <path d="M-6,16 Q0,14 6,16"/>
+
+    <!-- Left talon -->
+    <path d="M-5,16 C-8,20 -10,22 -9,25"/>
+    <path d="M-9,25 L-12,27 M-9,25 L-9,28 M-9,25 L-6,27"/>
+
+    <!-- Right talon -->
+    <path d="M5,16 C8,20 10,22 9,25"/>
+    <path d="M9,25 L12,27 M9,25 L9,28 M9,25 L6,27"/>
+
+    <!-- Scepter (left claw) -->
+    <line x1="-12" y1="22" x2="-12" y2="14"/>
+    <path d="M-14,14 L-12,11 L-10,14"/>
+    <circle cx="-12" cy="13" r="1.5"/>
+
+    <!-- Orb (right claw) -->
+    <circle cx="12" cy="20" r="3.5"/>
+    <line x1="12" y1="16.5" x2="12" y2="14"/>
+    <path d="M9,20 Q12,18 15,20"/>
+
+  </g>
+</svg>
